@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sreeya Tirumalasetti – AI Engineer</title>
+<meta name="description" content="Portfolio of Sreeya Tirumalasetti: RAG applications, agentic workflow automation and AI security projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4F7FB; --surface:#FFFFFF; --ink:#0E1B33; --muted:#51607A; --line:#D6DEEA;
+  --accent:#1F5FBF; --accent-ink:#FFFFFF; --mint:#0E8F7E; --tint:#E6EEFB;
+  --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0B1220;--surface:#111B2E;--ink:#E8EEF8;--muted:#9AA9C2;--line:#23324D;--accent:#6AA2FF;--accent-ink:#0B1220;--mint:#3CCBB6;--tint:#16254A;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0B1220;--surface:#111B2E;--ink:#E8EEF8;--muted:#9AA9C2;--line:#23324D;--accent:#6AA2FF;--accent-ink:#0B1220;--mint:#3CCBB6;--tint:#16254A;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body)}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+nav{display:flex;gap:22px;justify-content:flex-end;padding:20px 0;font-weight:500;font-size:15px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink)}
+h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0}
+h1{font-size:clamp(44px,8vw,84px);font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(28px,4vw,38px);font-weight:700;margin-bottom:28px}
+h3{font-size:21px;font-weight:700}
+.hero{padding:36px 0 56px}
+.lede{max-width:60ch;font-size:19px;color:var(--muted);margin:22px 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:600;text-decoration:none;border:1.5px solid var(--accent);color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn:hover{filter:brightness(1.08)}
+.pipe{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px;margin-top:44px}
+.pipe p.cap{margin:0 0 14px;color:var(--muted);font-size:15px}
+.stages{display:flex;gap:8px;flex-wrap:wrap}
+.stage{flex:1 1 110px;font:600 15px var(--body);padding:12px 8px;border-radius:10px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer;text-align:center}
+.stage[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.detail{margin:18px 0 0;padding:16px 18px;border-left:4px solid var(--mint);background:var(--tint);border-radius:0 10px 10px 0;min-height:84px}
+.detail b{font-family:var(--display);font-size:18px}
+section{padding:48px 0;border-top:1px solid var(--line)}
+.proj{display:grid;grid-template-columns:200px 1fr;gap:12px 32px;padding:26px 0;border-bottom:1px solid var(--line)}
+.proj:last-child{border-bottom:0}
+.proj .meta{color:var(--muted);font-size:14px}
+.proj .meta .stack{margin-top:8px;color:var(--mint);font-weight:600}
+.proj ul{margin:12px 0 0;padding-left:20px}
+.proj li{margin:6px 0;max-width:68ch}
+.row{display:grid;grid-template-columns:200px 1fr;gap:6px 32px;padding:12px 0}
+.row .when{color:var(--muted);font-size:14px}
+.row b{font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:5px 12px;border-radius:99px;background:var(--tint);font-size:14.5px;font-weight:500}
+.skillrow{display:grid;grid-template-columns:200px 1fr;gap:8px 32px;padding:12px 0;align-items:start}
+.skillrow h3{font-size:17px}
+footer{padding:40px 0 56px;color:var(--muted);font-size:15px}
+@media (max-width:700px){.proj,.row,.skillrow{grid-template-columns:1fr}.wrap{padding:0 18px}nav{justify-content:flex-start}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Sections">
+    <a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Sreeya Tirumalasetti</h1>
+    <p class="lede">AI engineering student in Dubai. I build RAG applications that answer from your documents and cite their sources, and workflow automations that replace manual business processes.</p>
+    <div class="btns">
+      <a class="btn primary" href="https://github.com/SREEYA1712">See my GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/sreeyatirumalasetti">Connect on LinkedIn</a>
+      <a class="btn" href="mailto:sreeyat17@gmail.com">Email me</a>
+    </div>
+
+    <div class="pipe">
+      <p class="cap">How my AI Knowledge Assistant answers a question. Select a stage.</p>
+      <div class="stages" role="tablist" aria-label="RAG pipeline stages">
+        <button class="stage" role="tab" aria-selected="true" data-i="0">Ingest</button>
+        <button class="stage" role="tab" aria-selected="false" data-i="1">Chunk</button>
+        <button class="stage" role="tab" aria-selected="false" data-i="2">Embed</button>
+        <button class="stage" role="tab" aria-selected="false" data-i="3">Retrieve</button>
+        <button class="stage" role="tab" aria-selected="false" data-i="4">Answer</button>
+      </div>
+      <p class="detail" id="detail" role="tabpanel" aria-live="polite"></p>
+    </div>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <article class="proj">
+      <div class="meta">
+        Personal project
+        <div class="stack">Python, LangChain, ChromaDB, Ollama, Hugging Face, Streamlit</div>
+      </div>
+      <div>
+        <h3>AI Knowledge Assistant</h3>
+        <ul>
+          <li>Upload documents and ask questions in plain language. Answers come from semantic search, not keyword matching.</li>
+          <li>Full retrieval pipeline: ingestion, chunking, Hugging Face embeddings and ChromaDB vector search.</li>
+          <li>An open-source Ollama/Qwen model answers only from the retrieved context and shows its document sources, which cuts hallucinations and makes answers checkable.</li>
+          <li>Streamlit interface with multi-document querying and conversational follow-ups.</li>
+        </ul>
+      </div>
+    </article>
+    <article class="proj">
+      <div class="meta">
+        Jan 2026 – Mar 2026
+        <div class="stack">n8n, Python, REST APIs, Postman, Power Automate, Power Apps</div>
+      </div>
+      <div>
+        <h3>Agentic AI for Smart Workflow Automation</h3>
+        <ul>
+          <li>Turned manual enterprise processes into automated workflows with n8n and Python.</li>
+          <li>Connected APIs and orchestrated multi-step workflows, with validation and automation logic in every step.</li>
+          <li>Tested APIs in Postman and workflows end to end. Added error handling, execution monitoring and team documentation.</li>
+        </ul>
+      </div>
+    </article>
+    <article class="proj">
+      <div class="meta">
+        Aug 2025 – Apr 2026
+        <div class="stack">Python, ML, neural networks, anomaly detection, Ubuntu, Wazuh</div>
+      </div>
+      <div>
+        <h3>AI-Integrated Endpoint Security System</h3>
+        <ul>
+          <li>An 8-month Python tool that monitors system activity and flags potential threats automatically.</li>
+          <li>Hybrid detector: rules catch known suspicious patterns, and neural-network anomaly detection flags unusual behaviour the rules miss.</li>
+          <li>Tested against simulated suspicious actions on Ubuntu virtual machines in VirtualBox, with exposure to the Wazuh monitoring platform.</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="row">
+      <div class="when">Dec 2025 – Mar 2026</div>
+      <div>
+        <b>AI Engineer Intern</b>, FORTEIA – MTMF Power Platform Software Solutions
+        <p style="margin:6px 0 0;color:var(--muted)">Developed and tested AI-driven automation workflows for an Agentic AI task-automation project using Python, n8n, APIs and Postman, and built AI applications with the development team.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education and certifications</h2>
+    <div class="row"><div class="when">Sep 2026 – Present</div><div><b>Master of Applied Artificial Intelligence</b>, University of Wollongong in Dubai</div></div>
+    <div class="row"><div class="when">Aug 2022 – Apr 2026</div><div><b>B.Tech, Computer Science and Engineering</b>, Koneru Lakshmaiah Education Foundation. CGPA 9.3/10</div></div>
+    <div class="row">
+      <div class="when">Certifications</div>
+      <div class="chips">
+        <span class="chip">Oracle Cloud Infrastructure Foundations Associate (2026)</span>
+        <span class="chip">Automation Anywhere Essentials Automation Professional (2026)</span>
+        <span class="chip">Salesforce Certified AI Associate (2024)</span>
+        <span class="chip">AWS Certified Cloud Practitioner (2023)</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skillrow"><h3>Generative AI</h3><div class="chips"><span class="chip">RAG</span><span class="chip">Semantic search</span><span class="chip">Vector retrieval</span><span class="chip">LangChain</span><span class="chip">Ollama</span><span class="chip">Hugging Face</span><span class="chip">Agentic workflows</span><span class="chip">NLP</span></div></div>
+    <div class="skillrow"><h3>ML and data</h3><div class="chips"><span class="chip">Machine learning</span><span class="chip">Neural networks</span><span class="chip">Anomaly detection</span><span class="chip">Data analytics</span><span class="chip">R</span></div></div>
+    <div class="skillrow"><h3>Automation</h3><div class="chips"><span class="chip">n8n</span><span class="chip">Power Platform</span><span class="chip">Power Automate</span><span class="chip">Power Apps</span><span class="chip">Automation Anywhere</span><span class="chip">Postman</span><span class="chip">REST APIs</span></div></div>
+    <div class="skillrow"><h3>Engineering</h3><div class="chips"><span class="chip">Python</span><span class="chip">ChromaDB</span><span class="chip">Streamlit</span><span class="chip">Linux</span><span class="chip">AWS</span><span class="chip">Oracle Cloud</span><span class="chip">DBMS</span></div></div>
+  </section>
+
+  <section id="contact">
+    <h2>Let’s talk</h2>
+    <p style="max-width:60ch;margin:0 0 20px">I’m open to AI engineering and automation roles in the UAE. The quickest way to reach me is email.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:sreeyat17@gmail.com">sreeyat17@gmail.com</a>
+      <a class="btn" href="https://github.com/SREEYA1712">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/sreeyatirumalasetti">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>Sreeya Tirumalasetti · Dubai, UAE</footer>
+</div>
+
+<script>
+(function(){
+  var data=[
+    ["Ingest","Users upload their documents in the Streamlit app. Several documents can be queried together."],
+    ["Chunk","Each document is split into text chunks so retrieval can return just the relevant passage."],
+    ["Embed","Hugging Face embeddings turn every chunk into a vector that captures its meaning."],
+    ["Retrieve","ChromaDB vector search finds the chunks closest in meaning to the question, rather than matching keywords."],
+    ["Answer","An Ollama/Qwen model answers only from the retrieved context and shows the document sources, so every answer can be checked."]
+  ];
+  var tabs=document.querySelectorAll(".stage"), d=document.getElementById("detail");
+  function show(i){
+    tabs.forEach(function(t,k){t.setAttribute("aria-selected",k===i?"true":"false")});
+    d.innerHTML="<b></b><br><span></span>";
+    d.firstChild.textContent=data[i][0];
+    d.lastChild.textContent=data[i][1];
+  }
+  tabs.forEach(function(t){t.addEventListener("click",function(){show(+t.dataset.i)})});
+  show(0);
+})();
+</script>
+</body>
+</html>
